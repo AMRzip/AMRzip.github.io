@@ -47,7 +47,7 @@ export default function About() {
           About <span className={styles.gradient}>Multilingual</span>
         </h1>
         <p className={styles.subtitle}>
-          We're on a mission to make the web accessible to everyone, everywhere
+          We&apos;re on a mission to make the web accessible to everyone, everywhere
         </p>
       </motion.div>
 

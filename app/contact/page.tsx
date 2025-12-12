@@ -16,7 +16,7 @@ export default function Contact() {
           Get in <span className={styles.gradient}>Touch</span>
         </h1>
         <p className={styles.subtitle}>
-          We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
         </p>
       </motion.div>
 
@@ -176,13 +176,13 @@ export default function Contact() {
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>Can I schedule a demo?</h3>
             <p className={styles.faqAnswer}>
-              Absolutely! Select "Sales Question" in the form and mention demo in your message.
+              Absolutely! Select &quot;Sales Question&quot; in the form and mention demo in your message.
             </p>
           </div>
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>Where is your team located?</h3>
             <p className={styles.faqAnswer}>
-              We're a global team with headquarters in San Francisco and team members worldwide.
+              We&apos;re a global team with headquarters in San Francisco and team members worldwide.
             </p>
           </div>
         </div>
