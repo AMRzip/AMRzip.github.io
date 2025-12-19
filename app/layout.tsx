@@ -26,7 +26,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function () {
-                var src = 'https://multilipistorage.blob.core.windows.net/static/JS/page_translations.js';
+                var src = 'https://multilipistorage.blob.core.windows.net/static/seo-scripts/page_translations_main.js';
                 if (document.querySelector('script[src="' + src + '"]')) return;
                 var s = document.createElement('script');
                 s.src = src;
