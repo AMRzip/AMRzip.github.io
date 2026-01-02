@@ -26,13 +26,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function () {
-                var src = 'https://multilipistorage.blob.core.windows.net/static/seo-scripts/page_translations_main.js';
+                // var src = 'https://multilipistorage.blob.core.windows.net/static/seo-scripts/page_translations_main.js';
+                var src = "https://script-cdn.multilipi.com/static/JS/page_translations.js"
                 if (document.querySelector('script[src="' + src + '"]')) return;
                 var s = document.createElement('script');
                 s.src = src;
                 s.defer = true;
                 s.crossOrigin = 'anonymous';
-                s.setAttribute('multilipi-key', '73a59403-cd47-46d7-bf50-43ef15d30f57');
+                s.setAttribute('multilipi-key', 'bf74545e-4ce1-42bc-a710-fae15de52ead');
                 s.setAttribute('mode', 'auto');
                 s.setAttribute('data-pos-x', '50');
                 s.setAttribute('data-pos-y', '50');
