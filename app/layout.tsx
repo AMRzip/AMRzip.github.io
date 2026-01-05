@@ -16,29 +16,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="alternate" hreflang="en" href="https://ayushman.me" />
+        <link rel="alternate" hreflang="hi" href="https://hi.ayushman.me" />
+      </head>
       <body>
         <Navigation />
         <main>{children}</main>
         <Footer />
         <Script
-          id="multilipi-widget"
+          src="https://cdn.weglot.com/weglot.min.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="weglot-init"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              (function () {
-                // var src = 'https://multilipistorage.blob.core.windows.net/static/seo-scripts/page_translations_main.js';
-                var src = "https://script-cdn.multilipi.com/static/JS/page_translations.js"
-                if (document.querySelector('script[src="' + src + '"]')) return;
-                var s = document.createElement('script');
-                s.src = src;
-                s.defer = true;
-                s.crossOrigin = 'anonymous';
-                s.setAttribute('multilipi-key', 'bf74545e-4ce1-42bc-a710-fae15de52ead');
-                s.setAttribute('mode', 'auto');
-                s.setAttribute('data-pos-x', '50');
-                s.setAttribute('data-pos-y', '50');
-                document.head.appendChild(s);
-              }());
+              Weglot.initialize({
+                api_key: 'wg_3c00f5093ab922aadf207392c8973b766'
+              });
             `,
           }}
         />
