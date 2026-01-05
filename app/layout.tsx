@@ -7,6 +7,12 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Multilingual - WordPress Translation Plugin',
   description: 'The most powerful translation plugin for WordPress. Translate your website into multiple languages with AI-powered translations.',
+  alternates: {
+    languages: {
+      'en': 'https://ayushman.me',
+      'hi': 'https://hi.ayushman.me',
+    },
+  },
 }
 
 export default function RootLayout({
@@ -16,10 +22,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="alternate" hrefLang="en" href="https://ayushman.me" />
-        <link rel="alternate" hrefLang="hi" href="https://hi.ayushman.me" />
-      </head>
       <body>
         <Navigation />
         <main>{children}</main>
